@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/kapiljugnu/freecodecamp-projects#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "d3": "^5.9.2"
   },
   "devDependencies": {
