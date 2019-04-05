@@ -1,6 +1,7 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackExternalsPlugin= require('html-webpack-externals-plugin');
 
 module.exports = {
     entry: {
@@ -16,6 +17,12 @@ module.exports = {
             filename: 'd3.html',
             title: 'D3 Projects',
             chunks: ['d3']
+        }),
+        new HtmlWebpackExternalsPlugin({
+            externals: [{
+                module:'',
+                entry: 'https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js',
+            }]
         })
     ],
     module: {
