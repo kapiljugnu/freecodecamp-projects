@@ -17,16 +17,16 @@ module.exports = {
       filename: "d3.html",
       title: "D3 Projects",
       chunks: ["d3"]
-    }),
-    new HtmlWebpackExternalsPlugin({
-      externals: [
-        {
-          module: "",
-          entry:
-            "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
-        }
-      ]
     })
+    // new HtmlWebpackExternalsPlugin({
+    //   externals: [
+    //     {
+    //       module: "",
+    //       entry:
+    //         "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+    //     }
+    //   ]
+    // })
   ],
   module: {
     rules: [{ test: /\.js$/, use: "babel-loader" }]
@@ -34,6 +34,7 @@ module.exports = {
   devServer: {
     contentBase: "./dist",
     inline: true,
-    hot: true
+    hot: true,
+    openPage: "d3.html"
   }
 };
