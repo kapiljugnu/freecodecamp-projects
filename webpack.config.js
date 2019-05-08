@@ -5,7 +5,7 @@ const HtmlWebpackExternalsPlugin = require("html-webpack-externals-plugin");
 
 module.exports = {
   entry: {
-    d3: "./src/d3/index.js"
+    // d3: "./src/d3/index.js"
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -13,11 +13,11 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      filename: "d3.html",
-      title: "D3 Projects",
-      chunks: ["d3"]
-    })
+    // new HtmlWebpackPlugin({
+    //   filename: "d3.html",
+    //   title: "D3 Projects",
+    //   chunks: ["d3"]
+    // })
     // new HtmlWebpackExternalsPlugin({
     //   externals: [
     //     {
