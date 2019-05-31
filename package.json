@@ -19,10 +19,7 @@
     "url": "https://github.com/kapiljugnu/freecodecamp-projects/issues"
   },
   "homepage": "https://github.com/kapiljugnu/freecodecamp-projects#readme",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "d3": "^5.9.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "babel-loader": "^8.0.5",
